@@ -51,7 +51,7 @@ def respond(user_message, user_name):
     return ("No, no, no, no, no. - No, no, no, no, no, no, no. - No, no, no, no, no.")
   
   if user_message == "Who is the fairest of them all?":
-    return("You, my lord, are fairest of them all.")
+    return("Lips red as blood, hair black as ebony, skin smooth as silk. I am only bound by what is true; the fairest, my lord, is indeed you.")
   
   if user_message == "What do Jupiter, Saturn, and Neptune have in common?":
     return("First, they are all planets. Second, they are all round. Last but not least, none of them have McDonalds.")
