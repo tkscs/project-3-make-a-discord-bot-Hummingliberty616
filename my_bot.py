@@ -1,4 +1,5 @@
 from secret import my_username
+import random
 
 """
 **Do NOT change the name of this function.**
@@ -59,4 +60,51 @@ def respond(user_message, user_name):
   if user_message == "Why did the chicken cross the road?":
     return("I do not understand why people ask questions to which they know the answer.")
   
+  if user_message == "What is your favorite animal?":
+    animal = random.choice(["cat,", "dog", "quail"])
+    return (f"My favorite animal is a {animal}")
   
+  if user_message == "What is your favorite color?":
+    color = random.choice(["pink", "purple", "red"])
+  
+  if user_message == "What is your favorite beverage?":
+    beverage = random.choice(["Coca Cola", "root beer", "la piña colada"])
+    return(f"My favorite beverage is {beverage}.")
+  
+  if user_message == "What is the most effective method to combat world hunger?":
+    return("If the people have no bread, let them eat cake.")
+  
+  if user_message == "How can I become famous?":
+    return("Fame is a fickle friend; celebrity is as celebrity does.")
+  
+  if user_message == 
+  
+  else:
+    new_string = ""
+    for word in "Fe, fi, fo, fum. ":
+      new_string = new_string + word*2 
+
+    newer_string = ""
+    for word in "I sense the prescence of an Earthling. ": 
+      newer_string = newer_string + word*2
+
+    newer_string_3 = ""
+    for word in "Be he alive or be he dead, ":
+      newer_string_3 = newer_string_3 + word*2
+    
+    newer_string_4 = ""
+    for word in "I'll use his brains to make my bread. ":
+      newer_string_4 = newer_string_4 + word*2
+
+    
+    return(new_string + newer_string + newer_string_3 + newer_string_4)
+    
+  
+    
+
+    
+  
+
+
+  
+    
