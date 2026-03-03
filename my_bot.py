@@ -70,28 +70,28 @@ def respond(user_message, user_name):
   if user_message == "What is your favorite beverage?":
     beverage = random.choice(["Coca Cola", "root beer", "la piña colada"])
     return(f"My favorite beverage is {beverage}.")
-  
-  if user_message == "What is the most effective method to combat world hunger?":
-    return("If the people have no bread, let them eat cake.")
-  
+   
   if user_message == "How can I become famous?":
     return("Fame is a fickle friend; celebrity is as celebrity does.")
   
+  if user_message == "I demand to speak with your manager.":
+    return("You may contact my manager at wlin2028@kehillahstudent.org. Please keep in mind that he is very busy and may take time to reply.")
+  
   else:
     new_string = ""
-    for word in "Fe, fi, fo, fum. ":
+    for word in "Double, double ":
       new_string = new_string + word*2 
 
     newer_string = ""
-    for word in "I sense the prescence of an Earthling. ": 
+    for word in "toil and trouble. ": 
       newer_string = newer_string + word*2
 
     newer_string_3 = ""
-    for word in "Be he alive or be he dead, ":
+    for word in "Fire burn ":
       newer_string_3 = newer_string_3 + word*2
     
     newer_string_4 = ""
-    for word in "I'll use his brains to make my bread. ":
+    for word in "and cauldron bubble.":
       newer_string_4 = newer_string_4 + word*2
 
     
