@@ -77,8 +77,6 @@ def respond(user_message, user_name):
   if user_message == "How can I become famous?":
     return("Fame is a fickle friend; celebrity is as celebrity does.")
   
-  if user_message == 
-  
   else:
     new_string = ""
     for word in "Fe, fi, fo, fum. ":
