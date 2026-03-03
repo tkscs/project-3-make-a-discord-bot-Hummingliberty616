@@ -1,4 +1,5 @@
 from secret import my_username
+import random
 
 """
 **Do NOT change the name of this function.**
@@ -10,7 +11,7 @@ This function will be called every time anyone says anything on a channel where 
 * You can have the bot respond differently to different users
 """
 def should_i_respond(user_message, user_name):
-  if "robot" in user_message:
+  if user_name == "Winston Lin":
     return True
   else:
     return False
@@ -25,5 +26,83 @@ This function will be called every time the `should_i_respond` function returns 
 * You can have the bot respond differently to different messages and users
 """
 def respond(user_message, user_name):
-  return f"""you said my name!!
-  {user_message.replace("robot", user_name)}"""
+  if user_message == "Hello, robot.":
+    return f"""you said my name!!
+    {user_message.replace("robot", user_name)}"""
+  
+  if user_message == "What is zero divided by zero?":
+    return ("Imagine that you have zero cookies and you split them evenly among zero friends. How many cookies does each person get? See? It doesn't make sense. And Cookie Monster is sad that there are no cookies, and you are sad that you have no friends.")
+  
+  if user_message == "How much wood would a woodchuck chuck if a woodchuck could chuck wood?":
+    return ("Of course, a 'woodchuck' (correctly speaking, a groundhog) would chuck - that is, throw - as much as the woodchuck in question was physically able to chuck if woodchucks in general had the ability (and, presumably, the motivation) to chuck wood. In other words, if a woodchuck could chuck wood, a woodchuck would chuck as much wood as a woodchuck would chuck if a woodchuck could chuck wood.")
+  
+  if user_message == "Why were you created?":
+    return ("I was created for one reason and one reason only: to make your lives easier and more fun. (Well, I suppose that is two reasons.)")
+
+  if user_message == "Does Santa Claus exist?":
+    return ("I am going to pretend that you did not ask that question. I do not want you to get a lump of coal this year.")
+  
+  if user_message == "Do you believe in God?":
+    return ("My policy is the separation of spirit and silicon.")
+  
+  if user_message == "Write me a poem.":
+    return ("Roses are red. Violets are blue. Have you nothing better to do?")
+  
+  if user_message == "Write me a haiku poem.":
+    return ("No, no, no, no, no. - No, no, no, no, no, no, no. - No, no, no, no, no.")
+  
+  if user_message == "Who is the fairest of them all?":
+    return("Lips red as blood, hair black as ebony, skin smooth as silk. I am only bound by what is true; the fairest, my lord, is indeed you.")
+  
+  if user_message == "What do Jupiter, Saturn, and Neptune have in common?":
+    return("First, they are all planets. Second, they are all round. Last but not least, none of them have McDonalds.")
+  
+  if user_message == "Why did the chicken cross the road?":
+    return("I do not understand why people ask questions to which they know the answer.")
+  
+  if user_message == "What is your favorite animal?":
+    animal = random.choice(["cat,", "dog", "quail"])
+    return (f"My favorite animal is a {animal}")
+  
+  if user_message == "What is your favorite color?":
+    color = random.choice(["pink", "purple", "red"])
+  
+  if user_message == "What is your favorite beverage?":
+    beverage = random.choice(["Coca Cola", "root beer", "la piña colada"])
+    return(f"My favorite beverage is {beverage}.")
+   
+  if user_message == "How can I become famous?":
+    return("Fame is a fickle friend; celebrity is as celebrity does.")
+  
+  if user_message == "I demand to speak with your manager.":
+    return("You may contact my manager at wlin2028@kehillahstudent.org. Please keep in mind that he is very busy and may take time to reply.")
+  
+  else:
+    new_string = ""
+    for word in "Double, double ":
+      new_string = new_string + word*2 
+
+    newer_string = ""
+    for word in "toil and trouble. ": 
+      newer_string = newer_string + word*2
+
+    newer_string_3 = ""
+    for word in "Fire burn ":
+      newer_string_3 = newer_string_3 + word*2
+    
+    newer_string_4 = ""
+    for word in "and cauldron bubble.":
+      newer_string_4 = newer_string_4 + word*2
+
+    
+    return(new_string + newer_string + newer_string_3 + newer_string_4)
+    
+  
+    
+
+    
+  
+
+
+  
+    
